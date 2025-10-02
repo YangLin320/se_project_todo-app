@@ -1,6 +1,0 @@
-
-
-
-
-
-enableValidation(validationConfig);
