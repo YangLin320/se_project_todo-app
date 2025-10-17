@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from "https://jspm.dev/uuid";
 import { validationConfig, initialTodos } from "../utils/constants.js";
-import Todo from "../components/todo.js";
-import FormValidator from "../components/FormValidation.js";
+import Todo from "../components/Todo.js";
+import FormValidator from "../components/FormValidator.js";
 import Section from "../components/Section.js";
 import PopupWithForm from "../components/PopupWithForm.js";
 import TodoCounter from "../components/TodoCounter.js";
