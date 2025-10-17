@@ -28,8 +28,8 @@ const addTodoPopup = new PopupWithForm({
 
       const id = uuidv4();
       const values = { id, name, date };
-      const todo = new Todo(values, "#todo-template");
-      todosList.append(todo.getView());
+      const todo = new Todo(values, "#todo-template", completeCounter, totalCounter);
+      section.addItem(todo.getView());
       addTodoPopup.close();
       totalCounter(false);
 
