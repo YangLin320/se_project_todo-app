@@ -22,13 +22,9 @@ class Todo {
       this._todoNameElement.textContent = this._data.name;
       this._todoCheckboxElement.checked = this._data.completed;
 
-      // Apply id and for attributes.
-      // The id will initially be undefined for new todos.
       this._todoCheckboxElement.id = `todo-${this._data.id}`;
       this._todoLabel.setAttribute("for", `todo-${this._data.id}`);
 
-      // If a due date has been set, parsing this it with `new Date` will return a
-      // number. If so, we display a string version of the due date in the todo.
       const dueDate = new Date(this._data.date);
       if (!isNaN(dueDate)) {
          this._todoDate.textContent = `Due: ${dueDate.toLocaleString("en-US", {
