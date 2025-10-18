@@ -16,7 +16,7 @@ function completeCounter(completed){
 }
 
 function totalCounter(deleted){
-   todoCounter.updateTotal(!deleted);
+   todoCounter.updateTotal(deleted);
 }
 
 const addTodoPopup = new PopupWithForm({

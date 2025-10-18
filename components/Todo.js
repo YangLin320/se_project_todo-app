@@ -38,8 +38,9 @@ class Todo {
    _setEventListeners() {
       this._todoDeleteBtn.addEventListener("click", () => {
          this._todoElement.remove();
-         this._totalCounter(true);
-         this._completeCounter(this._data.completed);
+         this._totalCounter(false);
+         if(this._data.completed){
+            this._completeCounter(false)};
       });
       this._todoCheckboxElement.addEventListener("change", () => {
          this._data.completed = !this._data.completed;
